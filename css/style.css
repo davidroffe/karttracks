@@ -1,0 +1,346 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*Google Maps Styles*/
+#map-canvas {
+    height: 700px;
+    margin: 0;
+    padding: 0;
+}
+    /*Remove google logo and terms*/
+a[title="Click to see this area on Google Maps"]{display:none !important}
+a[title="Report errors in the road map or imagery to Google"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}
+
+div#template {
+    display: none;
+}
+div.info-window {
+    position: absolute;
+    background-color: #FFF;
+    cursor: pointer;
+    font-family: 'Lato';
+    width:450px;
+    height: 330px;
+}
+img.info-window-img {
+    width: inherit;
+}
+
+h3.info-window-title {
+    font-size: 24px;
+    font-weight: 300;
+    margin: -25px 20px 5px;
+}
+p.info-window-loc {
+    color: #717374;
+    font-size: 20px;
+    font-weight: 300;
+    margin:0 20px 15px;
+}
+p.info-window-loc > .fa-map-marker {
+    margin-right: 10px;
+}
+div.info-window-category {
+    position: relative;
+    overflow: hidden;
+    top: -25px;
+    padding-right: 20px;
+    font-size: 15px;
+}
+div.info-window-category > p {
+    float: right;
+    margin: 0;
+    padding: 10px 20px;
+    color: white;
+}
+
+p.cat-1 {
+    background: #1A97FF;
+}
+
+p.cat-2 {
+    background: #52A3FF;
+}
+
+/*Global*/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+    margin-right:auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+    margin-right:auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    margin-right:auto;
+    margin-left: auto;
+  }
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33333333%;
+}
+.col-9 {
+    width: 75%;
+}
+
+body {
+    font-family: 'Lato', 'Roboto';
+    font-size: 14px;
+    color: #5b5b5b;
+}
+
+section, footer {
+    padding: 50px 0;
+}
+
+footer {
+    min-height: 200px;
+}
+
+a {
+    color: #5b5b5b;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald';
+}
+
+h1 {
+    font-size: 34px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+p {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+/*Header Styles*/
+header {
+    overflow: hidden;
+}
+
+header > h1 {
+    float: left;
+    padding:30px 0;
+}
+
+header > h1 > span {
+    color: #0EABF8;
+    font-weight: 800;
+}
+
+nav {
+    float: right;
+}
+
+nav > ul > li {
+    position: relative;
+    float: left;
+    padding: 40px 10px;
+}
+
+nav > ul > li > a {
+    position: relative;
+    padding: 4px;
+    font-family: 'Oswald';
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+nav > ul > li > a:before {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    background-color: #0EABF8;
+    opacity: 0;
+    content: ' ';
+    width: 100%;
+    height: 2px;
+    transition: all 0.3s ease;
+}
+
+nav > ul > li > a:hover:before {
+    top: 100%;
+    opacity: 1;
+    color: #0EABF8;
+}
+
+nav > ul > li > a:hover {
+    color: #0EABF8;
+}
+
+/*Track Types*/
+section.track-types > div {
+    overflow: hidden;
+}
+
+section.track-types h2 {
+}
+
+div.track-types-info {
+    float:left;
+    padding: 20px 5% 0;
+    width: 23.33333333%;
+}
+
+div.track-types-info > img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+div.track-types-info > p {
+    margin: 10px 0;
+}
+
+/*Featured Track*/
+section.featured-track {
+    background: #A6B6BC;
+    color: #FFF;
+    overflow: hidden;
+}
+
+div.container-960 {
+    width: 960px;
+    margin:0 auto;
+}
+
+section.featured-track > div > h2 {
+    margin-bottom: 50px;
+}
+
+section.featured-track > div > div {
+    overflow: hidden;
+}
+
+section.featured-track > div > div > img {
+    float: left;
+    display: block;
+    width: 28%;
+    margin-right: 4%;
+    -webkit-filter: grayscale(75%); 
+    filter: grayscale(75%);
+}
+
+section.featured-track > div > div > div {
+    width: 68%;
+    float: left;
+}
+
+section.featured-track h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p.featured-cat > span {
+    padding: 10px 15px;
+}
+
+p.featured-cat > span:first-child {
+    background: #55ABCB;
+}
+
+p.featured-cat > span:last-child {
+    background: #5BBADD;
+}
+
+section.featured-track .fa-map-marker {
+    margin-right: 5px;
+}
+
+/*Footer Styles*/
+footer {
+    background: #38484D;
+    color: #FFF;
+}
+
+footer p {
+    color: #A6B6BC;
+}
+
+footer > div {
+    overflow: hidden;
+}
+
+footer > div > div {
+    float: left;
+    width: 28%;
+    margin-right: 5%;
+}
